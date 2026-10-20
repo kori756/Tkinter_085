@@ -58,3 +58,5 @@ label_hasil = tk.Label(
 label_hasil.pack(pady=5)
 
 
+
+top.mainloop()
