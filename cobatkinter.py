@@ -19,3 +19,18 @@ frame_input.pack(pady=5)
 
 entries = []
 
+#loop untuk mata pelajaran
+for i in range(1, 11):
+    lbl_matkul = tk.Label(
+        frame_input, 
+        text=f"Nilai Mata Pelajaran {i}:", 
+        font=("Arial", 10), 
+        bg="#b0e0e6", 
+        anchor="w"
+    )
+    lbl_matkul.grid(row=i-1, column=0, sticky="w", padx=10, pady=4)
+    
+    entry_nilai = tk.Entry(frame_input, width=15, bd=2)
+    entry_nilai.grid(row=i-1, column=1, padx=10, pady=4)
+    entries.append(entry_nilai)
+
