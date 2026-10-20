@@ -34,3 +34,16 @@ for i in range(1, 11):
     entry_nilai.grid(row=i-1, column=1, padx=10, pady=4)
     entries.append(entry_nilai)
 
+#button
+btn_prediksi = tk.Button(
+    top, 
+    text="Hasil Prediksi", 
+    font=("Arial", 11, "bold"), 
+    bg="#4CAF50", 
+    fg="white", 
+    padx = 10,
+    pady = 3,
+    command=hitung_prediksi
+)
+btn_prediksi.pack(pady=15)
+
